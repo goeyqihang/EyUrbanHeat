@@ -1,0 +1,36 @@
+# --- Data ---------------------------------------------------------------------
+# Challenge data are not redistributed; data/README.md explains where to get them.
+data/raw/*
+!data/raw/.gitkeep
+# GeoTIFFs written by notebooks/01_satellite_data_extraction.ipynb. They are up to
+# ~160 MB each (GitHub rejects files over 100 MB); regenerate them with that notebook.
+data/processed/*
+!data/processed/.gitkeep
+*.tif
+*.tiff
+
+# --- Outputs ------------------------------------------------------------------
+outputs/
+
+# --- Local copy of the original competition notebooks (not part of the repo) --
+_archive_original/
+
+# --- Jupyter / Python ---------------------------------------------------------
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+dask-worker-space/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# --- OS / editors -------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
